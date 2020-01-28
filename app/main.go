@@ -13,7 +13,7 @@ func main() {
 
 	port, exists := os.LookupEnv("port")
 	if !exists {
-		port = "80"
+		port = "8088"
 	}
 	http.ListenAndServe(":" + port, nil)
 }
