@@ -11,7 +11,7 @@ func main() {
 		fmt.Fprintf(w, "Hello World!")
 	})
 
-	port, exists := os.LookupEnv("port")
+	port, exists := os.LookupEnv("PORT")
 	if !exists {
 		port = "8088"
 	}
